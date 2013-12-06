@@ -24,7 +24,7 @@ test_tcp(
   server => sub {
     my $port = shift;
 
-    use Dancer2 ':syntax';
+    use Dancer2;
     use Dancer2::Plugin::Adapter;
 
     set confdir => '.';
